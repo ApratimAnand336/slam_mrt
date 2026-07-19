@@ -10,7 +10,7 @@
     name="root_link">
   </link>
   <joint name="joint_root" type="fixed">
-    <origin xyz="0.276421885520658 -0.526119109974194 -0.213679693338444" rpy="0 0 3.1415926"/>
+    <origin xyz="0.276421885520658 -0.526119109974194 -0.213679693338444" rpy="0 0 0"/>
     <parent link="root_link"/>
     <child link="base_link"/>
   </joint>
@@ -97,10 +97,11 @@
   </gazebo>
   <gazebo reference="sensor_laser">  
     <sensor name='gpu_lidar' type='gpu_lidar'>"
-        <!-- <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose> -->
-        <pose> 0 0 0 0 0 0 </pose>
+        <pose relative_to='sensor_laser'>0 0 0 0 0 0</pose>
+        <gz_frame_id>sensor_laser</gz_frame_id>
+        <!-- <pose> 0 0 0 0 0 0 </pose> -->
         <topic>lidar</topic>
-        <update_rate>1</update_rate>
+        <update_rate>10</update_rate>
         <ray>
             <scan>
                 <horizontal>
@@ -151,7 +152,7 @@
   </link>
 
   <joint name="joint_sensor_laser" type="fixed">
-    <origin xyz="0.276421885520658 -0.526119109974194 0.413679693338444" rpy="0 0 3.1415926"/>
+    <origin xyz="0.276421885520658 -0.526119109974194 0.413679693338444" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="sensor_laser"/>
   </joint>
@@ -358,7 +359,7 @@
     <child
       link="wheel_4" />
     <axis
-      xyz="0.6621 0.060914 -0.74694" />
+      xyz="-0.6621 -0.060914 0.74694" />
   </joint>
   <link
     name="Left_bogie">
@@ -413,8 +414,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.5"
-      upper="0.3"
+      lower="-0.1"
+      upper="0.1"
       effort="10000"
       velocity="1" />
   </joint>
@@ -479,7 +480,7 @@
     <child
       link="wheel_5" />
     <axis
-      xyz="0.6621 0.060914 -0.74694" />
+      xyz="-0.6621 -0.060914 0.74694" />
   </joint>
   <link
     name="wheel_6">
@@ -542,7 +543,7 @@
     <child
       link="wheel_6" />
     <axis
-      xyz="0.6621 0.060914 -0.74694" />
+      xyz="-0.6621 -0.060914 0.74694" />
   </joint>
   <!-- <link
     name="ball-left-down0">
@@ -712,7 +713,7 @@
     <child
       link="wheel_1" />
     <axis
-      xyz="-0.6621 -0.060914 0.74694" />
+      xyz="0.6621 0.060914 -0.74694" />
   </joint>
   <link
     name="Right_bogie">
@@ -767,8 +768,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.5"
-      upper="0.3"
+      lower="-0.1"
+      upper="0.1"
       effort="10000"
       velocity="1" />
   </joint>
@@ -833,7 +834,7 @@
     <child
       link="wheel_2" />
     <axis
-      xyz="-0.6621 -0.060914 0.74694" />
+      xyz="0.6621 0.060914 -0.74694" />
   </joint>
   <link
     name="wheel_3">
@@ -896,7 +897,7 @@
     <child
       link="wheel_3" />
     <axis
-      xyz="-0.6621 -0.060914 0.74694" />
+      xyz="0.6621 0.060914 -0.74694" />
   </joint>
   <!-- <link
     name="ball-right-down0">
@@ -2061,26 +2062,37 @@
       filename="libignition-gazebo6-diff-drive-system.so"
       name="ignition::gazebo::systems::DiffDrive">
 
-      <left_joint>wheel_joint_4</left_joint>
+      <!-- <left_joint>wheel_joint_4</left_joint>
       <left_joint>wheel_joint_5</left_joint>
       <left_joint>wheel_joint_6</left_joint>
 
       <right_joint>wheel_joint_1</right_joint>
       <right_joint>wheel_joint_2</right_joint>
-      <right_joint>wheel_joint_3</right_joint>
+      <right_joint>wheel_joint_3</right_joint> -->
+      <left_joint>wheel_joint_1</left_joint>
+      <left_joint>wheel_joint_2</left_joint>
+      <left_joint>wheel_joint_3</left_joint>
 
-      <wheel_separation>1.2</wheel_separation>
-      <wheel_radius>0.4</wheel_radius>
+      <right_joint>wheel_joint_4</right_joint>
+      <right_joint>wheel_joint_5</right_joint>
+      <right_joint>wheel_joint_6</right_joint>
+
+      <wheel_separation>1.0</wheel_separation>
+      <wheel_radius>0.115</wheel_radius>
       
       <odom_publish_frequency>50</odom_publish_frequency>
       <topic>cmd_vel</topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <odom_topic>/odom</odom_topic>
+      <!-- <tf_topic>/tf</tf_topic> -->
     </plugin>
   </gazebo>
   <gazebo>
     <plugin filename="libignition-gazebo-pose-publisher-system.so"
         name="ignition::gazebo::systems::PosePublisher">
-      <update_frequency>10.0</update_frequency>
-      <publish_link_pose>true</publish_link_pose>
+      <update_frequency>1.0</update_frequency>
+      <publish_link_pose>false</publish_link_pose>
       <publish_sensor_pose>true</publish_sensor_pose>
       <publish_collision_pose>false</publish_collision_pose>
       <publish_visual_pose>false</publish_visual_pose>
