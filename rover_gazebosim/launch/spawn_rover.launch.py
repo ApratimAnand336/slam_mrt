@@ -207,8 +207,9 @@ def generate_launch_description():
     robot_description=robot_description_content
     # Load configuration for parameter bridge
     config_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'config', 'joint_names_mobility urdf adaptation.yaml')
-    # world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'husarion_office.sdf')
-    world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'husarion_world.sdf')
+    world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'husarion_office.sdf')
+    # world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'husarion_world.sdf')
+    # world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'warehouse.world')
     # world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'rover.world')
     # world_file = os.path.join(get_package_share_directory('rover_gazebosim'), 'world', 'new.sdf')
     pkg_sim=get_package_share_directory('ros_gz_sim')
