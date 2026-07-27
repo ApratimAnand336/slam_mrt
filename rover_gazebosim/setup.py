@@ -34,7 +34,7 @@ setup(
         ('share/rover_gazebosim/world', ['world/rover.world']),
         ('share/rover_gazebosim/world', ['world/husarion_office.sdf']),
         ('share/rover_gazebosim/world', ['world/husarion_world.sdf']),
-        # ('share/rover_gazebosim/world', ['world/warehouse.world']),
+        # ('share/rover_gazebosim/world', ['world/warehouse.world']),   
         # ('share/rover_gazebosim/urdf', ['urdf/rrbot.urdf']),
         # ('share/rover_gazebosim/config', ['config/parameter_bridge.yaml']),
         ('share/rover_gazebosim/config', ['config/joint_names_mobility urdf adaptation.yaml']),
