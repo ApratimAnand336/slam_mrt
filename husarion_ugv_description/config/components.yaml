@@ -9,7 +9,7 @@ components:
 
   - type: LDR06
     parent_link: mount_link
-    xyz: 0.0 -0.1 0.0
+    xyz: 0.0 -0.1 0.08
     rpy: 0.0 0.0 0.0
     name: second_lidar
 

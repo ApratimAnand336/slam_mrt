@@ -45,6 +45,9 @@ setup(
         ('share/rover_gazebosim/urdf', ['urdf/rover.gazebo']),
         ('share/rover_gazebosim/meshes', glob('meshes/*.STL')),
         ('share/rover_gazebosim/meshes', glob('meshes/panther*.STL')),
+        ('share/rover_gazebosim/maps', glob('maps/my_map_final.yaml')),
+        ('share/rover_gazebosim/maps', glob('maps/my_map_final.pgm')),
+
         *model_data_files,
         *models_data_files,
     ],
