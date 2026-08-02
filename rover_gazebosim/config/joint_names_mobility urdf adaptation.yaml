@@ -84,3 +84,35 @@
   ros_type_name: "geometry_msgs/msg/Twist"
   gz_type_name: "ignition.msgs.Twist"
   direction: GZ_TO_ROS 
+
+
+
+
+
+# /gazebo/resource_paths
+# /gui/camera/pose
+- ros_topic_name: "/front_cam/depth/image_raw/points"
+  gz_topic_name: "/front_cam/depth/image_raw/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "ignition.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS 
+- ros_topic_name: "/front_cam/color/image_raw"
+  gz_topic_name: "/front_cam/color/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "ignition.msgs.Image"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/front_cam/color/camera_info"
+  gz_topic_name: "/front_cam/color/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "ignition.msgs.CameraInfo"
+  direction: GZ_TO_ROS  
+- ros_topic_name: "/front_cam/depth/image_raw"
+  gz_topic_name: "/front_cam/depth/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "ignition.msgs.Image"
+  direction: GZ_TO_ROS 
+- ros_topic_name: "/front_cam/depth/camera_info"
+  gz_topic_name: "/front_cam/depth/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "ignition.msgs.CameraInfo"
+  direction: GZ_TO_ROS  

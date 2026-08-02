@@ -13,8 +13,46 @@ components:
     rpy: 0.0 0.0 0.0
     name: second_lidar
 
-#   - type: CAM01
-#     parent_link: mount_link
-#     xyz: 0.1 0.0 0.0
-#     rpy: 0.0 0.0 0.0
-#     name: front_cam
+  - type: CAM01
+    parent_link: mount_link
+    xyz: 0.1 0.0 0.0
+    rpy: 0.0 0.0 0.0
+    name: front_cam
+    static_transforms:
+      - parent: front_cam_depth_frame
+        child: front_cam_depth_optical_frame
+        xyz: [0, 0, 0]
+        rpy: [1.5708, 0, 0] 
+# # front_cam_depth_optical_frame
+# - header:
+#     stamp:
+#       sec: 0
+#       nanosec: 0
+#     frame_id: front_cam_depth_frame
+#   child_frame_id: front_cam_depth_optical_frame
+#   transform:
+#     translation:
+#       x: 0.0
+#       y: 0.0
+#       z: 0.0
+#     rotation:
+#       x: 0.5
+#       y: -0.4999999999999999
+#       z: 0.5
+#       w: -0.5000000000000001
+# - header:
+#     stamp:
+#       sec: 0
+#       nanosec: 0
+#     frame_id: front_cam_depth_frame
+#   child_frame_id: front_cam_depth_optical_frame
+#   transform:
+#     translation:
+#       x: 0.0
+#       y: 0.0
+#       z: 0.0
+#     rotation:
+#       x: 0.5
+#       y: -0.4999999999999999
+#       z: 0.5
+#       w: -0.5000000000000001

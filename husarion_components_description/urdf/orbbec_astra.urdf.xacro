@@ -106,7 +106,7 @@ limitations under the License.
     <link name="${component_name_underscore}depth_optical_frame" />
 
     <joint name="${component_name_underscore}depth_to_${component_name_underscore}depth_optical_joint" type="fixed">
-      <origin xyz="0.0 0.0 0.0" rpy="${-pi/2} 0.0 ${-pi/2}" />
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
       <parent link="${component_name_underscore}depth_frame" />
       <child link="${component_name_underscore}depth_optical_frame" />
     </joint>

@@ -17,7 +17,7 @@ amcl:
     lambda_short: 0.1
     laser_likelihood_max_dist: 2.0
     laser_max_range: 100.0
-    laser_min_range: -1.0
+    laser_min_range: 0.5
     laser_model_type: "likelihood_field"
     max_beams: 60
     max_particles: 2000
@@ -41,7 +41,7 @@ amcl:
     z_max: 0.05
     z_rand: 0.5
     z_short: 0.05
-    scan_topic: scan
+    scan_topic: /second_lidar/scan
 
 bt_navigator:
   ros__parameters:
@@ -87,12 +87,12 @@ bt_navigator:
 controller_server:
   ros__parameters:
     use_sim_time: true 
-    controller_frequency: 40.0
+    controller_frequency: 40.0    #check this ....
     costmap_update_timeout: 0.30
-    min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.5
-    min_theta_velocity_threshold: 0.001
-    failure_tolerance: 0.3
+    min_x_velocity_threshold: -0.1   #check this...
+    min_y_velocity_threshold: 0.5   
+    min_theta_velocity_threshold: 0.001   #check this...
+    failure_tolerance: 0.3  #check this...
     progress_checker_plugins: ["progress_checker"]
     goal_checker_plugins: ["general_goal_checker"]
     controller_plugins: ["FollowPath"]
@@ -217,9 +217,9 @@ controller_server:
       batch_size: 2000
 
       # LIMIT DYNAMICS (VERY IMPORTANT)
-      vx_max: 0.25
-      vx_min: -0.2
-      wz_max: 0.4     #  reduced from 1.9
+      vx_max: 4.50      #check this...
+      vx_min: -4.50
+      wz_max: 1.8     #  reduced from 1.9
 
       #  REDUCE NOISE (more stable control)
       vx_std: 0.1
@@ -227,8 +227,8 @@ controller_server:
       wz_std: 0.2
 
       # acceleration limits (smooth motion)
-      ax_max: 2.0
-      ax_min: -2.0
+      ax_max: 3.0    #check this...
+      ax_min: -3.0
       az_max: 1.5
 
       iteration_count: 1
@@ -280,16 +280,19 @@ controller_server:
         cost_weight: 5.0   #  encourages rotation alignment
 
       PreferForwardCritic:
-        enabled: false     # disable (important for rover)
-
+        # enabled: false     # disable (important for rover)
+        enabled: true
+        cost_power: 1
+        cost_weight: -1.0
+        threshold_to_consider: 0.5
       CostCritic:
         enabled: true
         cost_power: 1
         cost_weight: 3.5
-        near_collision_cost: 253
+        near_collision_cost: 253    #check this...
         critical_cost: 300.0
         consider_footprint: false
-        collision_cost: 1000000.0
+        collision_cost: 1000000.0   #check this...
         near_goal_distance: 1.0
         trajectory_point_step: 2
 
@@ -318,15 +321,16 @@ local_costmap:
   local_costmap:
     ros__parameters:
       use_sim_time: true 
-      update_frequency: 5.0
+      update_frequency: 5.0    #check this...
       publish_frequency: 2.0
       global_frame: odom
       robot_base_frame: base_link
       rolling_window: true
-      width: 3
-      height: 3
-      resolution: 0.05
-      robot_radius: 0.22
+      width: 3     #check this...
+      height: 3    #check this...
+      resolution: 0.05 
+      robot_radius: 0.22   #check this...
+      # footprint: "[[0.55, 0.45], [0.55, -0.45], [-0.55, -0.45], [-0.55, 0.45]]"
       plugins: ["voxel_layer", "inflation_layer"]
       filters: ["keepout_filter"]
       keepout_filter:
@@ -335,10 +339,10 @@ local_costmap:
         filter_info_topic: "keepout_costmap_filter_info"
         override_lethal_cost: true
         lethal_override_cost: 200
-      inflation_layer:
+      inflation_layer:      #check this...
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 3.0
-        inflation_radius: 0.70
+        inflation_radius: 0.5
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: true
@@ -356,9 +360,9 @@ local_costmap:
           marking: true
           data_type: "LaserScan"
           raytrace_max_range: 3.0
-          raytrace_min_range: 0.0
+          raytrace_min_range: 0.5
           obstacle_max_range: 2.5
-          obstacle_min_range: 0.0
+          obstacle_min_range: 0.5
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: true
@@ -374,6 +378,7 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       robot_radius: 0.22
+      # footprint: "[[0.55, 0.45], [0.55, -0.45], [-0.55, -0.45], [-0.55, 0.45]]"
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -400,16 +405,16 @@ global_costmap:
           marking: true
           data_type: "LaserScan"
           raytrace_max_range: 3.0
-          raytrace_min_range: 0.0
+          raytrace_min_range: 0.5
           obstacle_max_range: 2.5
-          obstacle_min_range: 0.0
+          obstacle_min_range: 0.5
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: true
-      inflation_layer:
+      inflation_layer:   #check this...
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 3.0
-        inflation_radius: 0.7
+        inflation_radius: 0.5
       always_send_full_costmap: true
       introspection_mode: "disabled"
 
@@ -419,7 +424,7 @@ map_server:
     introspection_mode: "disabled"
 
 keepout_filter_mask_server:
-  ros__parameters:
+  ros__parameters: 
     use_sim_time: true 
     topic_name: "keepout_filter_mask"
 
@@ -455,7 +460,7 @@ map_saver:
     map_subscribe_transient_local: true
     introspection_mode: "disabled"
 
-planner_server:
+planner_server:   #check this...
   ros__parameters:
     use_sim_time: true 
     allow_partial_planning: false
@@ -561,16 +566,16 @@ route_server:
     CostmapScorer:
       plugin: "nav2_route::CostmapScorer"
 
-velocity_smoother:
+velocity_smoother:   #check this...
   ros__parameters:
     use_sim_time: true 
     smoothing_frequency: 20.0
     scale_velocities: false
     feedback: "OPEN_LOOP"
-    max_velocity: [0.5, 0.0, 2.0]
+    max_velocity: [5.0, 0.0, 2.0]
     min_velocity: [-0.5, 0.0, -2.0]
-    max_accel: [2.5, 0.0, 3.2]
-    max_decel: [-2.5, 0.0, -3.2]
+    max_accel: [3.0, 0.0, 3.2]
+    max_decel: [-3.0, 0.0, -3.2]
     odom_topic: "odom"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
@@ -650,7 +655,7 @@ docking_server:
       simulation_step: 0.1
       dock_collision_threshold: 0.3
 
-loopback_simulator:
+loopback_simulator:   #this is used for the simulation of the planning and then deciding which one to go for. It directly localises the bot to the given location without relying on the hardware
   ros__parameters:
     use_sim_time: true 
     base_frame_id: "base_link"

@@ -31,6 +31,7 @@ setup(
         ('share/rover_gazebosim/launch', ['launch/slam_and_rover.launch.py']),
         ('share/rover_gazebosim/launch', ['launch/nav2_launch.launch.py']),
         ('share/rover_gazebosim/launch', ['launch/pipeline_launch.launch.py']),
+        ('share/rover_gazebosim/launch', ['launch/rtab_launch.launch.py']),
         ('share/rover_gazebosim/world', ['world/rover.world']),
         ('share/rover_gazebosim/world', ['world/husarion_office.sdf']),
         ('share/rover_gazebosim/world', ['world/husarion_world.sdf']),
