@@ -1,0 +1,4 @@
+[console_scripts]
+covariance_relay = ekf_assgn.covariance_relay:main
+dummy_imu_publisher = ekf_assgn.dummy_imu_publisher:main
+dummy_odom_publisher = ekf_assgn.dummy_odom_publisher:main

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+writing ekf_dummy_pkg.egg-info/PKG-INFO
+writing dependency_links to ekf_dummy_pkg.egg-info/dependency_links.txt
+writing entry points to ekf_dummy_pkg.egg-info/entry_points.txt
+writing requirements to ekf_dummy_pkg.egg-info/requires.txt
+writing top-level names to ekf_dummy_pkg.egg-info/top_level.txt
+reading manifest file 'ekf_dummy_pkg.egg-info/SOURCES.txt'
+writing manifest file 'ekf_dummy_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf-dummy-pkg.egg-link (link to .)
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing imu_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing odom_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+
+Installed /home/sohan/slam_mrt/build/ekf_dummy_pkg
+running symlink_data
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/resource/ekf_dummy_pkg -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/package.xml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/scripts/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/scripts/odom_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts

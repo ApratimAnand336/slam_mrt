@@ -1,0 +1,1 @@
+/home/sohan/slam_mrt/build/husarion_ugv_controller/ament_cmake_environment_hooks/local_setup.bash

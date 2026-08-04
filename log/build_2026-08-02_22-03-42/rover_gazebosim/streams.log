@@ -1,0 +1,263 @@
+[0.738s] Invoking command in '/home/sohan/slam_mrt/rover_gazebosim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rover_gazebosim build --build-base /home/sohan/slam_mrt/build/rover_gazebosim/build install --record /home/sohan/slam_mrt/build/rover_gazebosim/install.log --install-scripts $base/lib/rover_gazebosim --single-version-externally-managed install_data
+[0.860s] running egg_info
+[0.861s] creating ../build/rover_gazebosim/rover_gazebosim.egg-info
+[0.868s] writing ../build/rover_gazebosim/rover_gazebosim.egg-info/PKG-INFO
+[0.869s] writing dependency_links to ../build/rover_gazebosim/rover_gazebosim.egg-info/dependency_links.txt
+[0.869s] writing entry points to ../build/rover_gazebosim/rover_gazebosim.egg-info/entry_points.txt
+[0.869s] writing requirements to ../build/rover_gazebosim/rover_gazebosim.egg-info/requires.txt
+[0.869s] writing top-level names to ../build/rover_gazebosim/rover_gazebosim.egg-info/top_level.txt
+[0.869s] writing manifest file '../build/rover_gazebosim/rover_gazebosim.egg-info/SOURCES.txt'
+[0.889s] reading manifest file '../build/rover_gazebosim/rover_gazebosim.egg-info/SOURCES.txt'
+[0.890s] writing manifest file '../build/rover_gazebosim/rover_gazebosim.egg-info/SOURCES.txt'
+[0.890s] running build
+[0.890s] running build_py
+[0.890s] creating /home/sohan/slam_mrt/build/rover_gazebosim/build
+[0.890s] creating /home/sohan/slam_mrt/build/rover_gazebosim/build/lib
+[0.891s] creating /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim
+[0.891s] copying rover_gazebosim/cmd_vel_relay.py -> /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim
+[0.891s] copying rover_gazebosim/__init__.py -> /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim
+[0.891s] copying rover_gazebosim/twist_to_stamped.py -> /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim
+[0.891s] running install
+[0.894s] running install_lib
+[0.905s] creating /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim
+[0.905s] copying /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim/cmd_vel_relay.py -> /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim
+[0.905s] copying /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim/__init__.py -> /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim
+[0.905s] copying /home/sohan/slam_mrt/build/rover_gazebosim/build/lib/rover_gazebosim/twist_to_stamped.py -> /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim
+[0.906s] byte-compiling /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim/cmd_vel_relay.py to cmd_vel_relay.cpython-312.pyc
+[0.906s] byte-compiling /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim/__init__.py to __init__.cpython-312.pyc
+[0.906s] byte-compiling /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim/twist_to_stamped.py to twist_to_stamped.cpython-312.pyc
+[0.909s] running install_data
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/ament_index
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/ament_index/resource_index
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/ament_index/resource_index/packages
+[0.909s] copying resource/rover_gazebosim -> /home/sohan/slam_mrt/install/rover_gazebosim/share/ament_index/resource_index/packages
+[0.909s] copying package.xml -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/launch
+[0.909s] copying launch/spawn_rover.launch.py -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/launch
+[0.909s] copying launch/slam_and_rover.launch.py -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/launch
+[0.909s] copying launch/nav2_launch.launch.py -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/launch
+[0.909s] copying launch/pipeline_launch.launch.py -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/launch
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/world
+[0.909s] copying world/rover.world -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/world
+[0.909s] copying world/husarion_office.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/world
+[0.909s] copying world/husarion_world.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/world
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/config
+[0.909s] copying config/joint_names_mobility urdf adaptation.yaml -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/config
+[0.909s] copying config/slam_mapping.yaml -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/config
+[0.909s] copying config/nav2_params.yaml -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/config
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/urdf
+[0.909s] copying urdf/rover.urdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/urdf
+[0.909s] copying world/new.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/world
+[0.909s] copying urdf/rover.gazebo -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/urdf
+[0.909s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.909s] copying meshes/wheel_1.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.909s] copying meshes/left-rod.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.909s] copying meshes/triangle-connector-l.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.909s] copying meshes/triangle-left.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/triangle-connector-r.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/ball-left-down.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/connector-link-2.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/ball-right-down.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/socket-right-down.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/Left_bogie.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/wheel_5.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/wheel_4.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/wheel_3.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/wheel_6.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/Right_bogie.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/socket-left-down.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/ball-right-down0.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/triangle-right.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/wheel_2.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/Right_rocker.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/ball-left-down0.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/connector-link-1.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/socket-left.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/Left_rocker.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/triangle-ball-left.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/base_link.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/right-rod.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/triangle-ball-right.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.910s] copying meshes/socket-right.STL -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/meshes
+[0.911s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/maps
+[0.911s] copying maps/my_map_final.yaml -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/maps
+[0.911s] copying maps/my_map_final.pgm -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/maps
+[0.911s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model
+[0.911s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces
+[0.911s] copying model/Surfaces/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces
+[0.911s] copying model/Surfaces/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces
+[0.911s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_14.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_4.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_7.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_11.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_5.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/wall_1.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_13.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/model.material -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_1.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/wood2.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_6.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_2.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_2.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/wall_2.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_3.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_12.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_6.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/floor_3.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.911s] copying model/Surfaces/meshes/white_tiles.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_9.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/wall_1.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_10.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/white_wall.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_11.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/white_carpet.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_10.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_4.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/wood1.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.912s] copying model/Surfaces/meshes/floor_1.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/wall_2.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_12.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_8.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_7.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/black_concrete.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_8.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_9.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_14.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_5.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] copying model/Surfaces/meshes/floor_13.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Surfaces/meshes
+[0.913s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/ConferenceTable
+[0.913s] copying model/ConferenceTable/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/ConferenceTable
+[0.913s] copying model/ConferenceTable/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/ConferenceTable
+[0.913s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/ConferenceTable/meshes
+[0.913s] copying model/ConferenceTable/meshes/conference_table.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/ConferenceTable/meshes
+[0.913s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Door
+[0.913s] copying model/Door/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Door
+[0.913s] copying model/Door/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Door
+[0.913s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Door/meshes
+[0.913s] copying model/Door/meshes/door.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Door/meshes
+[0.914s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/WaterDispenser
+[0.914s] copying model/WaterDispenser/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/WaterDispenser
+[0.915s] copying model/WaterDispenser/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/WaterDispenser
+[0.915s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/WaterDispenser/meshes
+[0.915s] copying model/WaterDispenser/meshes/water_dispenser.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/WaterDispenser/meshes
+[0.915s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Tv
+[0.916s] copying model/Tv/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Tv
+[0.916s] copying model/Tv/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Tv
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Tv/meshes
+[0.916s] copying model/Tv/meshes/tv.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Tv/meshes
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/HusarionLogo
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/HusarionLogo/meshes
+[0.916s] copying model/HusarionLogo/meshes/husarion_logo.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/HusarionLogo/meshes
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Laptop
+[0.916s] copying model/Laptop/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Laptop
+[0.916s] copying model/Laptop/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Laptop
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Laptop/meshes
+[0.916s] copying model/Laptop/meshes/laptop.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Laptop/meshes
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Kitchen
+[0.916s] copying model/Kitchen/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Kitchen
+[0.916s] copying model/Kitchen/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Kitchen
+[0.916s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Kitchen/meshes
+[0.916s] copying model/Kitchen/meshes/kitchen.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Kitchen/meshes
+[0.917s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot
+[0.917s] copying model/Rosbot/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot
+[0.917s] copying model/Rosbot/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot
+[0.917s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] copying model/Rosbot/meshes/box.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] copying model/Rosbot/meshes/rplidar.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] copying model/Rosbot/meshes/wheel.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] copying model/Rosbot/meshes/upper.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] copying model/Rosbot/meshes/astra.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/model/Rosbot/meshes
+[0.917s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models
+[0.917s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces
+[0.917s] copying models/Surfaces/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces
+[0.917s] copying models/Surfaces/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces
+[0.917s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/floor_14.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/floor_4.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/floor_7.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/floor_11.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/floor_5.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.917s] copying models/Surfaces/meshes/wall_1.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_13.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/model.material -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_1.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/wood2.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_6.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_2.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_2.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/wall_2.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_3.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_12.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_6.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_3.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/white_tiles.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_9.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/wall_1.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_10.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/white_wall.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/floor_11.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.918s] copying models/Surfaces/meshes/white_carpet.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_10.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_4.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/wood1.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_1.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/wall_2.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_12.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_8.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_7.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/black_concrete.png -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_8.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_9.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_14.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_5.obj -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] copying models/Surfaces/meshes/floor_13.mtl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Surfaces/meshes
+[0.919s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/ConferenceTable
+[0.919s] copying models/ConferenceTable/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/ConferenceTable
+[0.919s] copying models/ConferenceTable/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/ConferenceTable
+[0.919s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/ConferenceTable/meshes
+[0.920s] copying models/ConferenceTable/meshes/conference_table.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/ConferenceTable/meshes
+[0.920s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Door
+[0.920s] copying models/Door/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Door
+[0.920s] copying models/Door/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Door
+[0.920s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Door/meshes
+[0.920s] copying models/Door/meshes/door.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Door/meshes
+[0.921s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/WaterDispenser
+[0.921s] copying models/WaterDispenser/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/WaterDispenser
+[0.921s] copying models/WaterDispenser/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/WaterDispenser
+[0.921s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/WaterDispenser/meshes
+[0.921s] copying models/WaterDispenser/meshes/water_dispenser.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/WaterDispenser/meshes
+[0.923s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Tv
+[0.923s] copying models/Tv/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Tv
+[0.923s] copying models/Tv/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Tv
+[0.923s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Tv/meshes
+[0.923s] copying models/Tv/meshes/tv.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Tv/meshes
+[0.923s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/HusarionLogo
+[0.923s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/HusarionLogo/meshes
+[0.923s] copying models/HusarionLogo/meshes/husarion_logo.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/HusarionLogo/meshes
+[0.923s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Laptop
+[0.923s] copying models/Laptop/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Laptop
+[0.924s] copying models/Laptop/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Laptop
+[0.924s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Laptop/meshes
+[0.924s] copying models/Laptop/meshes/laptop.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Laptop/meshes
+[0.924s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Kitchen
+[0.924s] copying models/Kitchen/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Kitchen
+[0.924s] copying models/Kitchen/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Kitchen
+[0.924s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Kitchen/meshes
+[0.924s] copying models/Kitchen/meshes/kitchen.stl -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Kitchen/meshes
+[0.925s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot
+[0.926s] copying models/Rosbot/model.sdf -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot
+[0.926s] copying models/Rosbot/model.config -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot
+[0.926s] creating /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] copying models/Rosbot/meshes/box.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] copying models/Rosbot/meshes/rplidar.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] copying models/Rosbot/meshes/wheel.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] copying models/Rosbot/meshes/upper.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] copying models/Rosbot/meshes/astra.dae -> /home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/models/Rosbot/meshes
+[0.926s] running install_egg_info
+[0.937s] Copying ../build/rover_gazebosim/rover_gazebosim.egg-info to /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover_gazebosim-0.0.0-py3.12.egg-info
+[0.937s] running install_scripts
+[1.005s] Installing cmd_vel_relay script to /home/sohan/slam_mrt/install/rover_gazebosim/lib/rover_gazebosim
+[1.005s] Installing twist_to_stamped script to /home/sohan/slam_mrt/install/rover_gazebosim/lib/rover_gazebosim
+[1.007s] writing list of installed files to '/home/sohan/slam_mrt/build/rover_gazebosim/install.log'
+[1.037s] Invoked command in '/home/sohan/slam_mrt/rover_gazebosim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rover_gazebosim build --build-base /home/sohan/slam_mrt/build/rover_gazebosim/build install --record /home/sohan/slam_mrt/build/rover_gazebosim/install.log --install-scripts $base/lib/rover_gazebosim --single-version-externally-managed install_data

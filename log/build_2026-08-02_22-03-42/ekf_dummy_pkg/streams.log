@@ -1,0 +1,50 @@
+[0.743s] Invoking command in '/home/sohan/slam_mrt/ekf_dummy_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_dummy_pkg build --build-base /home/sohan/slam_mrt/build/ekf_dummy_pkg/build install --record /home/sohan/slam_mrt/build/ekf_dummy_pkg/install.log --install-scripts $base/lib/ekf_dummy_pkg --single-version-externally-managed install_data
+[0.872s] running egg_info
+[0.872s] creating ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info
+[0.881s] writing ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/PKG-INFO
+[0.881s] writing dependency_links to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/dependency_links.txt
+[0.881s] writing entry points to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/entry_points.txt
+[0.881s] writing requirements to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/requires.txt
+[0.881s] writing top-level names to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/top_level.txt
+[0.881s] writing manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+[0.898s] reading manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+[0.898s] writing manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+[0.898s] running build
+[0.898s] running build_py
+[0.899s] creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build
+[0.899s] creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib
+[0.899s] creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+[0.899s] copying ekf_dummy_pkg/__init__.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+[0.899s] copying ekf_dummy_pkg/imu_relay.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+[0.899s] copying ekf_dummy_pkg/dummy_odom_publisher.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+[0.899s] running install
+[0.902s] running install_lib
+[0.913s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+[0.913s] copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/__init__.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+[0.913s] copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/imu_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+[0.913s] copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/dummy_odom_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+[0.915s] byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/__init__.py to __init__.cpython-312.pyc
+[0.915s] byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/imu_relay.py to imu_relay.cpython-312.pyc
+[0.915s] byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/dummy_odom_publisher.py to dummy_odom_publisher.cpython-312.pyc
+[0.915s] running install_data
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+[0.915s] copying resource/ekf_dummy_pkg -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+[0.915s] copying package.xml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+[0.915s] copying launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+[0.915s] copying config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+[0.915s] creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+[0.916s] copying scripts/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+[0.916s] copying scripts/odom_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+[0.916s] running install_egg_info
+[0.925s] Copying ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg-0.0.0-py3.12.egg-info
+[0.925s] running install_scripts
+[0.983s] Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[0.984s] Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[0.984s] Installing imu_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[0.984s] Installing odom_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[0.984s] writing list of installed files to '/home/sohan/slam_mrt/build/ekf_dummy_pkg/install.log'
+[1.010s] Invoked command in '/home/sohan/slam_mrt/ekf_dummy_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ekf_dummy_pkg build --build-base /home/sohan/slam_mrt/build/ekf_dummy_pkg/build install --record /home/sohan/slam_mrt/build/ekf_dummy_pkg/install.log --install-scripts $base/lib/ekf_dummy_pkg --single-version-externally-managed install_data

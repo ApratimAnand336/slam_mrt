@@ -1,0 +1,3 @@
+[console_scripts]
+cmd_vel_relay = rover_gazebosim.cmd_vel_relay:main
+twist_to_stamped = rover_gazebosim.twist_to_stamped:main

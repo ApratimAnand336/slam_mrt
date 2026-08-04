@@ -33,8 +33,8 @@
   <!-- Controller -->
   <xacro:macro name="controller" params="config_file namespace:=''">
     <gazebo>
-      <!-- <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin"> -->
-      <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+      <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <!--<plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin"> -->
         <parameters>${config_file}</parameters>
         <ros>
           <namespace>${namespace}</namespace>
@@ -150,8 +150,8 @@
 
     <gazebo>
       <plugin
-        filename="ignition-gazebo-odometry-publisher-system"
-        name="ignition::gazebo::systems::OdometryPublisher">
+        filename="gz-sim-odometry-publisher-system"
+        name="gz::sim::systems::OdometryPublisher">
         <odom_frame>odom</odom_frame>
         <robot_base_frame>${ns}base_link</robot_base_frame>
         <odom_topic>${ns}odometry/ground_truth</odom_topic>

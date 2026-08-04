@@ -70,6 +70,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 import os
 from ament_index_python.packages import get_package_share_directory
+from launch.actions import AppendEnvironmentVariable
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
@@ -86,8 +87,16 @@ def generate_launch_description():
         'launch',
         'spawn_rover.launch.py'
     )
+    pkg_share = get_package_share_directory('rover_gazebosim')
+    
+    # Map the model:// prefix to your package's model directories
+    set_model_path = AppendEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        os.path.join(pkg_share, 'model') + ':' + os.path.join(pkg_share, 'models')
+    )
 
     return LaunchDescription([
+        set_model_path,
         IncludeLaunchDescription(
              PythonLaunchDescriptionSource(rover_launch_path)
         ),

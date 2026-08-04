@@ -1,0 +1,48 @@
+running egg_info
+creating ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info
+writing ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/entry_points.txt
+writing requirements to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/requires.txt
+writing top-level names to ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/top_level.txt
+writing manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+reading manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build
+creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib
+creating /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+copying ekf_dummy_pkg/__init__.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+copying ekf_dummy_pkg/imu_relay.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+copying ekf_dummy_pkg/dummy_odom_publisher.py -> /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg
+running install
+running install_lib
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/__init__.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/imu_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+copying /home/sohan/slam_mrt/build/ekf_dummy_pkg/build/lib/ekf_dummy_pkg/dummy_odom_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg
+byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/imu_relay.py to imu_relay.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg/dummy_odom_publisher.py to dummy_odom_publisher.cpython-312.pyc
+running install_data
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+copying resource/ekf_dummy_pkg -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+copying launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+copying config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+copying scripts/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+copying scripts/odom_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+running install_egg_info
+Copying ../build/ekf_dummy_pkg/ekf_dummy_pkg.egg-info to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf_dummy_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing imu_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+Installing odom_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+writing list of installed files to '/home/sohan/slam_mrt/build/ekf_dummy_pkg/install.log'

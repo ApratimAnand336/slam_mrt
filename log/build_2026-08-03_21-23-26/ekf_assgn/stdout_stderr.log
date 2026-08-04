@@ -1,0 +1,37 @@
+running develop
+Removing /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf-assgn.egg-link (link to .)
+running egg_info
+writing ../build/ekf_assgn/ekf_assgn.egg-info/PKG-INFO
+writing dependency_links to ../build/ekf_assgn/ekf_assgn.egg-info/dependency_links.txt
+writing entry points to ../build/ekf_assgn/ekf_assgn.egg-info/entry_points.txt
+writing requirements to ../build/ekf_assgn/ekf_assgn.egg-info/requires.txt
+writing top-level names to ../build/ekf_assgn/ekf_assgn.egg-info/top_level.txt
+reading manifest file '../build/ekf_assgn/ekf_assgn.egg-info/SOURCES.txt'
+writing manifest file '../build/ekf_assgn/ekf_assgn.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn
+copying /home/sohan/slam_mrt/build/ekf_assgn/build/lib/ekf_assgn/__init__.py -> /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn
+copying /home/sohan/slam_mrt/build/ekf_assgn/build/lib/ekf_assgn/covariance_relay.py -> /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn
+copying /home/sohan/slam_mrt/build/ekf_assgn/build/lib/ekf_assgn/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn
+copying /home/sohan/slam_mrt/build/ekf_assgn/build/lib/ekf_assgn/dummy_odom_publisher.py -> /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn
+byte-compiling /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn/covariance_relay.py to covariance_relay.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn/dummy_imu_publisher.py to dummy_imu_publisher.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn/dummy_odom_publisher.py to dummy_odom_publisher.cpython-312.pyc
+running install_data
+copying resource/ekf_assgn -> /home/sohan/slam_mrt/install/ekf_assgn/share/ament_index/resource_index/packages
+copying package.xml -> /home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn
+copying launch/ekf_rover.launch.py -> /home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/launch
+copying launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/launch
+copying config/ekf_rover.yaml -> /home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/config
+copying config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/config
+running install_egg_info
+Copying ../build/ekf_assgn/ekf_assgn.egg-info to /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf_assgn-0.0.0-py3.12.egg-info
+running install_scripts
+Installing covariance_relay script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+writing list of installed files to '/home/sohan/slam_mrt/build/ekf_assgn/install.log'

@@ -1,0 +1,1 @@
+/home/sohan/slam_mrt/rover_gazebosim/launch/spawn_rover.launch.py

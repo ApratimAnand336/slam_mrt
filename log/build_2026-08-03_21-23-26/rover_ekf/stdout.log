@@ -1,0 +1,36 @@
+running develop
+Removing /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover-ekf.egg-link (link to .)
+running egg_info
+writing ../build/rover_ekf/rover_ekf.egg-info/PKG-INFO
+writing dependency_links to ../build/rover_ekf/rover_ekf.egg-info/dependency_links.txt
+writing entry points to ../build/rover_ekf/rover_ekf.egg-info/entry_points.txt
+writing requirements to ../build/rover_ekf/rover_ekf.egg-info/requires.txt
+writing top-level names to ../build/rover_ekf/rover_ekf.egg-info/top_level.txt
+reading manifest file '../build/rover_ekf/rover_ekf.egg-info/SOURCES.txt'
+writing manifest file '../build/rover_ekf/rover_ekf.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/__init__.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/covariance_relay.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/dummy_odom_publisher.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/covariance_relay.py to covariance_relay.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/dummy_imu_publisher.py to dummy_imu_publisher.cpython-312.pyc
+byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/dummy_odom_publisher.py to dummy_odom_publisher.cpython-312.pyc
+running install_data
+copying resource/rover_ekf -> /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index/packages
+copying package.xml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf
+copying launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/launch
+copying config/ekf_rover.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+copying config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+running install_egg_info
+Copying ../build/rover_ekf/rover_ekf.egg-info to /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf-0.0.0-py3.12.egg-info
+running install_scripts
+Installing covariance_relay script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+writing list of installed files to '/home/sohan/slam_mrt/build/rover_ekf/install.log'

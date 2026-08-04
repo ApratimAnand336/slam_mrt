@@ -1,0 +1,26 @@
+[0.853s] Invoking command in '/home/sohan/slam_mrt/build/ekf_dummy_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_dummy_pkg/build --no-deps symlink_data --force
+[1.009s] running develop
+[1.088s] running egg_info
+[1.096s] writing ekf_dummy_pkg.egg-info/PKG-INFO
+[1.096s] writing dependency_links to ekf_dummy_pkg.egg-info/dependency_links.txt
+[1.096s] writing entry points to ekf_dummy_pkg.egg-info/entry_points.txt
+[1.096s] writing requirements to ekf_dummy_pkg.egg-info/requires.txt
+[1.096s] writing top-level names to ekf_dummy_pkg.egg-info/top_level.txt
+[1.114s] reading manifest file 'ekf_dummy_pkg.egg-info/SOURCES.txt'
+[1.115s] writing manifest file 'ekf_dummy_pkg.egg-info/SOURCES.txt'
+[1.123s] running build_ext
+[1.123s] Creating /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages/ekf-dummy-pkg.egg-link (link to .)
+[1.123s] Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[1.123s] Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[1.123s] Installing imu_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[1.124s] Installing odom_relay script to /home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/ekf_dummy_pkg
+[1.124s] 
+[1.124s] Installed /home/sohan/slam_mrt/build/ekf_dummy_pkg
+[1.124s] running symlink_data
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/resource/ekf_dummy_pkg -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ament_index/resource_index/packages
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/package.xml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/launch
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/config
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/scripts/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+[1.124s] symbolically linking /home/sohan/slam_mrt/build/ekf_dummy_pkg/scripts/odom_relay.py -> /home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/scripts
+[1.144s] Invoked command in '/home/sohan/slam_mrt/build/ekf_dummy_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_dummy_pkg/build --no-deps symlink_data --force

@@ -1,0 +1,105 @@
+[0.020s] Invoking command in '/home/sohan/slam_mrt/build/husarion_components_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/sohan/slam_mrt/husarion_components_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sohan/slam_mrt/install/husarion_components_description
+[0.367s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.367s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.368s] -- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+[0.431s] -- Configuring done (0.4s)
+[0.433s] -- Generating done (0.0s)
+[0.433s] -- Build files have been written to: /home/sohan/slam_mrt/build/husarion_components_description
+[0.492s] Invoked command in '/home/sohan/slam_mrt/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/sohan/slam_mrt/husarion_components_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sohan/slam_mrt/install/husarion_components_description
+[0.492s] Invoking command in '/home/sohan/slam_mrt/build/husarion_components_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_components_description -- -j32 -l32
+[0.517s] Invoked command in '/home/sohan/slam_mrt/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_components_description -- -j32 -l32
+[0.526s] Invoking command in '/home/sohan/slam_mrt/build/husarion_components_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_components_description
+[0.532s] -- Install configuration: ""
+[0.532s] -- Execute custom install script
+[0.532s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev01.dae
+[0.538s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev02.dae
+[0.543s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev03.dae
+[0.546s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev04h.dae
+[0.550s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev04l.dae
+[0.556s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev05.dae
+[0.559s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev06.dae
+[0.563s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev07.dae
+[0.566s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev07t.dae
+[0.569s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/devs/dev09.dae
+[0.576s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/orbbec_astra.glb
+[0.580s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/ouster_os01.dae
+[0.583s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/a2.glb
+[0.589s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/a3.glb
+[0.593s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/c1.glb
+[0.597s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/lpx-e3.glb
+[0.601s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/lpx-t1.glb
+[0.606s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/s1.glb
+[0.613s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/s2.glb
+[0.619s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/rplidar/s3.glb
+[0.625s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/teltonika_003R-00253.dae
+[0.630s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/teltonika_003R-00253_collision.stl
+[0.634s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/v_slot_profile.dae
+[0.638s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/velodyne_puck.glb
+[0.645s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/wibotic_frame.dae
+[0.649s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/wibotic_receiver.dae
+[0.654s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/meshes/wibotic_transmitter.dae
+[0.658s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/components.urdf.xacro
+[0.662s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/custom_component_example.urdf.xacro
+[0.665s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/dev.urdf.xacro
+[0.668s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/gz_sensor.urdf.xacro
+[0.673s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/intel_realsense_d435.urdf.xacro
+[0.676s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/kinova.urdf.xacro
+[0.680s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/luxonis_depthai.urdf.xacro
+[0.684s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/orbbec_astra.urdf.xacro
+[0.689s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/ouster.urdf.xacro
+[0.693s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/rack.urdf.xacro
+[0.697s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/robotiq.urdf.xacro
+[0.701s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/robotiq_2f_85_macro.urdf.xacro
+[0.706s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/slamtec_rplidar.urdf.xacro
+[0.712s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/stereolabs_zed.urdf.xacro
+[0.716s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/teltonika_003R-00253.urdf.xacro
+[0.722s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/ur.urdf.xacro
+[0.727s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/velodyne_puck.urdf.xacro
+[0.730s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/wibotic_receiver.urdf.xacro
+[0.734s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/urdf/wibotic_station.urdf.xacro
+[0.739s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_components.launch.py
+[0.743s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_intel_realsense_d435.launch.py
+[0.747s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_kinova_6dof.launch.py
+[0.751s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_kinova_7dof.launch.py
+[0.757s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_luxonis_depthai.launch.py
+[0.762s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_orbbec_astra.launch.py
+[0.766s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_ouster_os.launch.py
+[0.772s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_robotiq.launch.py
+[0.778s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_slamtec_rplidar.launch.py
+[0.783s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_stereolabs_zed.launch.py
+[0.789s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_teltonika.launch.py
+[0.793s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_ur.launch.py
+[0.797s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_velodyne.launch.py
+[0.800s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/launch/gz_wibotic_station.launch.py
+[0.806s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_intel_realsense_d435_remappings.yaml
+[0.813s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_kinova_remappings.yaml
+[0.819s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_luxonis_depthai_remappings.yaml
+[0.826s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_orbbec_astra_remappings.yaml
+[0.833s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_ouster_os_remappings.yaml
+[0.840s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_slamtec_rplidar_remappings.yaml
+[0.845s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_stereolabs_zed_remappings.yaml
+[0.852s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_teltonika_remappings.yaml
+[0.859s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/gz_velodyne_remappings.yaml
+[0.864s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/kinova_6dof_controllers.yaml
+[0.869s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/kinova_7dof_controllers.yaml
+[0.875s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/robotiq_controllers.yaml
+[0.880s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/config/ur_controllers.yaml
+[0.884s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/test/component.urdf.xacro
+[0.888s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/test/test_components_xacro.py
+[0.892s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/environment/husarion_components_description.sh
+[0.895s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/ament_index/resource_index/package_run_dependencies/husarion_components_description
+[0.899s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/ament_index/resource_index/parent_prefix_path/husarion_components_description
+[0.902s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/environment/ament_prefix_path.sh
+[0.912s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/environment/ament_prefix_path.dsv
+[0.915s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/environment/path.sh
+[0.920s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/environment/path.dsv
+[0.926s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/local_setup.bash
+[0.931s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/local_setup.sh
+[0.936s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/local_setup.zsh
+[0.941s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/local_setup.dsv
+[0.946s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.dsv
+[0.952s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/ament_index/resource_index/packages/husarion_components_description
+[0.958s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/cmake/husarion_components_descriptionConfig.cmake
+[0.962s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/cmake/husarion_components_descriptionConfig-version.cmake
+[0.966s] -- Symlinking: /home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.xml
+[0.975s] Invoked command in '/home/sohan/slam_mrt/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/home/sohan/ekf_ws/install/rover_gazebosim:/home/sohan/ekf_ws/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_components_description

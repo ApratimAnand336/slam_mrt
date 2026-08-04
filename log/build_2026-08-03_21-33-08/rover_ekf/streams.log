@@ -1,0 +1,24 @@
+[0.864s] Invoking command in '/home/sohan/slam_mrt/build/rover_ekf': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_ekf/build --no-deps symlink_data --force
+[1.026s] running develop
+[1.105s] running egg_info
+[1.114s] writing rover_ekf.egg-info/PKG-INFO
+[1.114s] writing dependency_links to rover_ekf.egg-info/dependency_links.txt
+[1.114s] writing entry points to rover_ekf.egg-info/entry_points.txt
+[1.114s] writing requirements to rover_ekf.egg-info/requires.txt
+[1.114s] writing top-level names to rover_ekf.egg-info/top_level.txt
+[1.129s] reading manifest file 'rover_ekf.egg-info/SOURCES.txt'
+[1.130s] writing manifest file 'rover_ekf.egg-info/SOURCES.txt'
+[1.138s] running build_ext
+[1.138s] Creating /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover-ekf.egg-link (link to .)
+[1.139s] Installing covariance_relay script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[1.139s] Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[1.139s] Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[1.139s] 
+[1.139s] Installed /home/sohan/slam_mrt/build/rover_ekf
+[1.139s] running symlink_data
+[1.139s] symbolically linking /home/sohan/slam_mrt/build/rover_ekf/resource/rover_ekf -> /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index/packages
+[1.139s] symbolically linking /home/sohan/slam_mrt/build/rover_ekf/package.xml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf
+[1.139s] symbolically linking /home/sohan/slam_mrt/build/rover_ekf/launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/launch
+[1.139s] symbolically linking /home/sohan/slam_mrt/build/rover_ekf/config/ekf_rover.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+[1.139s] symbolically linking /home/sohan/slam_mrt/build/rover_ekf/config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+[1.171s] Invoked command in '/home/sohan/slam_mrt/build/rover_ekf' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_ekf/build --no-deps symlink_data --force

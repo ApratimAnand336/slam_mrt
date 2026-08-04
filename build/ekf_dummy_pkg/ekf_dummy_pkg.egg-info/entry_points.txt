@@ -1,0 +1,5 @@
+[console_scripts]
+dummy_imu_publisher = ekf_dummy_pkg.scripts.dummy_imu_publisher:main
+dummy_odom_publisher = ekf_dummy_pkg.dummy_odom_publisher:main
+imu_relay = ekf_dummy_pkg.imu_relay:main
+odom_relay = ekf_dummy_pkg.scripts.odom_relay:main

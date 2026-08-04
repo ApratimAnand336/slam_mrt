@@ -1,0 +1,9 @@
+source;share/ekf_dummy_pkg/hook/pythonpath.ps1
+source;share/ekf_dummy_pkg/hook/pythonpath.dsv
+source;share/ekf_dummy_pkg/hook/pythonpath.sh
+source;share/ekf_dummy_pkg/hook/ament_prefix_path.ps1
+source;share/ekf_dummy_pkg/hook/ament_prefix_path.dsv
+source;share/ekf_dummy_pkg/hook/ament_prefix_path.sh
+source;../../build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.ps1
+source;../../build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.dsv
+source;../../build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.sh

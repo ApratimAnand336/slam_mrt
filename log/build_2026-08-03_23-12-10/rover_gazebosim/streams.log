@@ -1,0 +1,18 @@
+[1.078s] Invoking command in '/home/sohan/slam_mrt/build/rover_gazebosim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_gazebosim/build --no-deps symlink_data
+[1.263s] running develop
+[1.366s] running egg_info
+[1.377s] writing rover_gazebosim.egg-info/PKG-INFO
+[1.377s] writing dependency_links to rover_gazebosim.egg-info/dependency_links.txt
+[1.377s] writing entry points to rover_gazebosim.egg-info/entry_points.txt
+[1.377s] writing requirements to rover_gazebosim.egg-info/requires.txt
+[1.378s] writing top-level names to rover_gazebosim.egg-info/top_level.txt
+[1.399s] reading manifest file 'rover_gazebosim.egg-info/SOURCES.txt'
+[1.402s] writing manifest file 'rover_gazebosim.egg-info/SOURCES.txt'
+[1.413s] running build_ext
+[1.413s] Creating /home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages/rover-gazebosim.egg-link (link to .)
+[1.414s] Installing cmd_vel_relay script to /home/sohan/slam_mrt/install/rover_gazebosim/lib/rover_gazebosim
+[1.414s] Installing twist_to_stamped script to /home/sohan/slam_mrt/install/rover_gazebosim/lib/rover_gazebosim
+[1.414s] 
+[1.414s] Installed /home/sohan/slam_mrt/build/rover_gazebosim
+[1.414s] running symlink_data
+[1.446s] Invoked command in '/home/sohan/slam_mrt/build/rover_gazebosim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_gazebosim/build --no-deps symlink_data

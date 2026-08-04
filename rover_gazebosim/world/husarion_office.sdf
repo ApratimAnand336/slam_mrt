@@ -7,51 +7,45 @@
       <real_time_factor>1.0</real_time_factor>
     </physics>
 
-    <plugin filename="ignition-gazebo-contact-system" name="ignition::gazebo::systems::Contact" />
-    <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu" />
-    <plugin filename="ignition-gazebo-physics-system" name="ignition::gazebo::systems::Physics" />
-    <plugin filename="ignition-gazebo-scene-broadcaster-system"
-      name="ignition::gazebo::systems::SceneBroadcaster" />
-    <plugin name='ignition::gazebo::systems::UserCommands' filename='ignition-gazebo-user-commands-system'/>
-    <plugin filename="libignition-gazebo-joint-state-publisher-system.so" name="ignition::gazebo::systems::JointStatePublisher"/>
-    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
-            name="ignition::gazebo::systems::TriggeredPublisher">
-        <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact" />
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu" />
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher"/>
+    <plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
             <match field="data">16777235</match>
         </input>
-        <output type="ignition.msgs.Twist" topic="/cmd_vel">
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
             linear: {x: 0.5}, angular: {z: 0.0}
         </output>
     </plugin>
-    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
-            name="ignition::gazebo::systems::TriggeredPublisher">
-        <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+    <plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
             <match field="data">16777237</match>
         </input>
-        <output type="ignition.msgs.Twist" topic="/cmd_vel">
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
             linear: {x: -0.5}, angular: {z: 0.0}
         </output>
     </plugin>
-    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
-            name="ignition::gazebo::systems::TriggeredPublisher">
-        <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+    <plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
             <match field="data">16777236</match>
         </input>
-        <output type="ignition.msgs.Twist" topic="/cmd_vel">
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
             linear: {x: 0.0}, angular: {z: -0.5}
         </output>
     </plugin>
-    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
-            name="ignition::gazebo::systems::TriggeredPublisher">
-        <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+    <plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
             <match field="data">16777234</match>
         </input>
-        <output type="ignition.msgs.Twist" topic="/cmd_vel">
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
             linear: {x: 0.0}, angular: {z: 0.5}
         </output>
     </plugin>
-    <plugin filename="libignition-gazebo-sensors-system.so"
-      name="ignition::gazebo::systems::Sensors">
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
 
@@ -749,10 +743,6 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -798,10 +788,6 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Red</name>
-            </script>
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -830,10 +816,6 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -912,10 +894,6 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -994,10 +972,6 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1077,10 +1051,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1177,10 +1148,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1226,10 +1194,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1392,10 +1357,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1441,10 +1403,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Red</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1473,10 +1432,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1555,10 +1511,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1637,10 +1590,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1720,10 +1670,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1820,10 +1767,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -1869,10 +1813,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2034,10 +1975,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2083,10 +2021,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Red</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2115,10 +2050,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2197,10 +2129,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2279,10 +2208,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2362,10 +2288,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2462,10 +2385,8 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -2511,10 +2432,7 @@
           </geometry>
           <material>
             <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Black</name>
-            </script>
+            
             <shader type='vertex'>
               <normal_map>__default__</normal_map>
             </shader>
@@ -4251,10 +4169,6 @@
           </geometry>
           <material>
             <diffuse>1 1 1 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
             <pbr>
               <metal>
                 <albedo_map>https://fuel.gazebosim.org/1.0/openrobotics/models/table/3/files/Table_Diffuse.jpg</albedo_map>
@@ -4294,10 +4208,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='front_right_leg'>
@@ -4332,10 +4243,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='back_right_leg'>
@@ -4370,10 +4278,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='back_left_leg'>
@@ -4408,10 +4313,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <self_collide>0</self_collide>
@@ -4456,10 +4358,7 @@
           </geometry>
           <material>
             <diffuse>1 1 1 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <pbr>
               <metal>
                 <albedo_map>https://fuel.gazebosim.org/1.0/openrobotics/models/table/3/files/Table_Diffuse.jpg</albedo_map>
@@ -4499,10 +4398,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='front_right_leg'>
@@ -4537,10 +4433,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='back_right_leg'>
@@ -4575,10 +4468,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='back_left_leg'>
@@ -4613,10 +4503,7 @@
           </geometry>
           <material>
             <diffuse>0.5 0.5 0.5 1</diffuse>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            
           </material>
         </visual>
         <self_collide>0</self_collide>
@@ -6007,10 +5894,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6046,10 +5930,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6085,10 +5966,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6124,10 +6002,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6163,10 +6038,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6202,10 +6074,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6241,10 +6110,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6280,10 +6146,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6319,10 +6182,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6358,10 +6218,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6397,10 +6254,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6436,10 +6290,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6475,10 +6326,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6514,10 +6362,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6553,10 +6398,7 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
-            </script>
+            
             <ambient>1 1 1 1</ambient>
           </material>
           <meta>
@@ -6746,10 +6588,7 @@
                 <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_1_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -6793,10 +6632,7 @@
                 <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_2_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -6840,10 +6676,7 @@
                 <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_3_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -6887,10 +6720,7 @@
                 <albedo_map>model://Surfaces/meshes/black_concrete.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_4_Diffuse</name>
-            </script>
+
           </material>
         </visual>
         <collision name='collision'>
@@ -6934,10 +6764,7 @@
                 <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_5_Diffuse</name>
-            </script>
+
           </material>
         </visual>
         <collision name='collision'>
@@ -6981,10 +6808,7 @@
                 <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_6_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7028,10 +6852,7 @@
                 <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_7_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7075,10 +6896,7 @@
                 <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_8_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7122,10 +6940,7 @@
                 <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_9_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7169,10 +6984,7 @@
                 <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_10_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7216,10 +7028,7 @@
                 <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_11_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7263,10 +7072,7 @@
                 <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_12_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7310,10 +7116,7 @@
                 <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_13_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7357,10 +7160,7 @@
                 <albedo_map>model://Surfaces/meshes/black_concrete.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>floor_14_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7405,10 +7205,7 @@
                 <albedo_map>model://Surfaces/meshes/white_wall.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>wall_1_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>
@@ -7454,10 +7251,7 @@
                 <albedo_map>model://Surfaces/meshes/wood2.png</albedo_map>
               </metal>
             </pbr>
-            <script>
-              <uri>model://Surfaces/meshes/</uri>
-              <name>wall_2_Diffuse</name>
-            </script>
+            
           </material>
         </visual>
         <collision name='collision'>

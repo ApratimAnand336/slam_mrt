@@ -64,7 +64,7 @@
         <xacro:if value="${use_sim}">
           <!-- <plugin>husarion_ugv_gazebo/EStopSystem</plugin>
           <param name="e_stop_initial_state">true</param> -->
-          <plugin>ign_ros2_control/IgnitionSystem</plugin>
+          <plugin>gz_ros2_control/GazeboSimSystem</plugin>
         </xacro:if>
 
         <xacro:unless value="${use_sim}">

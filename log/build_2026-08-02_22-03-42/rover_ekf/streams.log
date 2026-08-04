@@ -1,0 +1,50 @@
+[0.743s] Invoking command in '/home/sohan/slam_mrt/rover_ekf': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rover_ekf build --build-base /home/sohan/slam_mrt/build/rover_ekf/build install --record /home/sohan/slam_mrt/build/rover_ekf/install.log --install-scripts $base/lib/rover_ekf --single-version-externally-managed install_data
+[0.872s] running egg_info
+[0.873s] creating ../build/rover_ekf/rover_ekf.egg-info
+[0.882s] writing ../build/rover_ekf/rover_ekf.egg-info/PKG-INFO
+[0.882s] writing dependency_links to ../build/rover_ekf/rover_ekf.egg-info/dependency_links.txt
+[0.882s] writing entry points to ../build/rover_ekf/rover_ekf.egg-info/entry_points.txt
+[0.882s] writing requirements to ../build/rover_ekf/rover_ekf.egg-info/requires.txt
+[0.882s] writing top-level names to ../build/rover_ekf/rover_ekf.egg-info/top_level.txt
+[0.882s] writing manifest file '../build/rover_ekf/rover_ekf.egg-info/SOURCES.txt'
+[0.901s] reading manifest file '../build/rover_ekf/rover_ekf.egg-info/SOURCES.txt'
+[0.902s] writing manifest file '../build/rover_ekf/rover_ekf.egg-info/SOURCES.txt'
+[0.902s] running build
+[0.902s] running build_py
+[0.902s] creating /home/sohan/slam_mrt/build/rover_ekf/build
+[0.902s] creating /home/sohan/slam_mrt/build/rover_ekf/build/lib
+[0.902s] creating /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf
+[0.902s] copying rover_ekf/__init__.py -> /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf
+[0.902s] copying rover_ekf/covariance_relay.py -> /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf
+[0.902s] copying rover_ekf/dummy_imu_publisher.py -> /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf
+[0.902s] copying rover_ekf/dummy_odom_publisher.py -> /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf
+[0.902s] running install
+[0.906s] running install_lib
+[0.917s] creating /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+[0.918s] copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/__init__.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+[0.918s] copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/covariance_relay.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+[0.918s] copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/dummy_imu_publisher.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+[0.918s] copying /home/sohan/slam_mrt/build/rover_ekf/build/lib/rover_ekf/dummy_odom_publisher.py -> /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf
+[0.918s] byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/__init__.py to __init__.cpython-312.pyc
+[0.918s] byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/covariance_relay.py to covariance_relay.cpython-312.pyc
+[0.919s] byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/dummy_imu_publisher.py to dummy_imu_publisher.cpython-312.pyc
+[0.919s] byte-compiling /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf/dummy_odom_publisher.py to dummy_odom_publisher.cpython-312.pyc
+[0.919s] running install_data
+[0.920s] creating /home/sohan/slam_mrt/install/rover_ekf/share/ament_index
+[0.920s] creating /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index
+[0.920s] creating /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index/packages
+[0.920s] copying resource/rover_ekf -> /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index/packages
+[0.920s] copying package.xml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf
+[0.920s] creating /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/launch
+[0.920s] copying launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/launch
+[0.920s] creating /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+[0.920s] copying config/ekf_rover.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+[0.920s] copying config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+[0.920s] running install_egg_info
+[0.930s] Copying ../build/rover_ekf/rover_ekf.egg-info to /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover_ekf-0.0.0-py3.12.egg-info
+[0.931s] running install_scripts
+[0.994s] Installing covariance_relay script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[0.995s] Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[0.995s] Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+[0.995s] writing list of installed files to '/home/sohan/slam_mrt/build/rover_ekf/install.log'
+[1.033s] Invoked command in '/home/sohan/slam_mrt/rover_ekf' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/rover_ekf build --build-base /home/sohan/slam_mrt/build/rover_ekf/build install --record /home/sohan/slam_mrt/build/rover_ekf/install.log --install-scripts $base/lib/rover_ekf --single-version-externally-managed install_data

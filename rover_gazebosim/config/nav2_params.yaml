@@ -319,7 +319,8 @@ local_costmap:
       use_sim_time: true 
       update_frequency: 5.0
       publish_frequency: 2.0
-      global_frame: map
+      global_frame: odom
+      robot_radius: 0.22
       robot_base_frame: base_link
       rolling_window: true
       width: 10
@@ -340,7 +341,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 1.5
-        inflation_radius: 0.2
+        inflation_radius: 0.55
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: true
@@ -466,7 +467,7 @@ planner_server:
     costmap_update_timeout: 1.0
     introspection_mode: "disabled"
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
+      plugin: "nav2_navfn_planner::NavfnPlanner"
       tolerance: 0.5
       use_astar: false
       allow_unknown: true
@@ -502,22 +503,22 @@ behavior_server:
       ["spin", "backup", "drive_on_heading", "wait"]
 
     spin:
-      plugin: "nav2_behaviors/Spin"
+      plugin: "nav2_behaviors::Spin"
 
     backup:
-      plugin: "nav2_behaviors/BackUp"
+      plugin: "nav2_behaviors::BackUp"
       acceleration_limit: 2.5
       deceleration_limit: -2.5
       minimum_speed: 0.10
 
     drive_on_heading:
-      plugin: "nav2_behaviors/DriveOnHeading"
+      plugin: "nav2_behaviors::DriveOnHeading"
       acceleration_limit: 2.5
       deceleration_limit: -2.5
       minimum_speed: 0.10
 
     wait:
-      plugin: "nav2_behaviors/Wait"
+      plugin: "nav2_behaviors::Wait"
 
     local_frame: odom
     global_frame: map
@@ -578,7 +579,7 @@ velocity_smoother:
 collision_monitor:
   ros__parameters:
     use_sim_time: true 
-    enabled: true
+    enabled: false
     base_frame_id: "base_link"
     odom_frame_id: "odom"
     cmd_vel_in_topic: "cmd_vel_smoothed"

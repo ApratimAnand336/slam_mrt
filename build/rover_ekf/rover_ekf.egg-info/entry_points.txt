@@ -1,0 +1,4 @@
+[console_scripts]
+covariance_relay = rover_ekf.covariance_relay:main
+dummy_imu_publisher = rover_ekf.dummy_imu_publisher:main
+dummy_odom_publisher = rover_ekf.dummy_odom_publisher:main

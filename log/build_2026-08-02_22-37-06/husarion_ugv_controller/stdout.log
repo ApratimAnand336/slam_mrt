@@ -1,0 +1,27 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/sohan/slam_mrt/build/husarion_ugv_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/config/WH01_controller.yaml
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/config/WH02_controller.yaml
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/config/WH04_controller.yaml
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/config/WH05_controller.yaml
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/launch/controller.launch.py
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/ament_index/resource_index/package_run_dependencies/husarion_ugv_controller
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/ament_index/resource_index/parent_prefix_path/husarion_ugv_controller
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/environment/path.sh
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/environment/path.dsv
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/local_setup.bash
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/local_setup.sh
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/local_setup.zsh
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/local_setup.dsv
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.dsv
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/ament_index/resource_index/packages/husarion_ugv_controller
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/cmake/husarion_ugv_controllerConfig.cmake
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/cmake/husarion_ugv_controllerConfig-version.cmake
+-- Symlinking: /home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.xml

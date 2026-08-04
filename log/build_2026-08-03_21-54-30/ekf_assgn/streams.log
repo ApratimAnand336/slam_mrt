@@ -1,0 +1,19 @@
+[0.893s] Invoking command in '/home/sohan/slam_mrt/build/ekf_assgn': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_assgn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_assgn/build --no-deps symlink_data
+[1.044s] running develop
+[1.123s] running egg_info
+[1.132s] writing ekf_assgn.egg-info/PKG-INFO
+[1.132s] writing dependency_links to ekf_assgn.egg-info/dependency_links.txt
+[1.133s] writing entry points to ekf_assgn.egg-info/entry_points.txt
+[1.133s] writing requirements to ekf_assgn.egg-info/requires.txt
+[1.133s] writing top-level names to ekf_assgn.egg-info/top_level.txt
+[1.147s] reading manifest file 'ekf_assgn.egg-info/SOURCES.txt'
+[1.147s] writing manifest file 'ekf_assgn.egg-info/SOURCES.txt'
+[1.155s] running build_ext
+[1.155s] Creating /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf-assgn.egg-link (link to .)
+[1.156s] Installing covariance_relay script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+[1.156s] Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+[1.156s] Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+[1.156s] 
+[1.156s] Installed /home/sohan/slam_mrt/build/ekf_assgn
+[1.156s] running symlink_data
+[1.178s] Invoked command in '/home/sohan/slam_mrt/build/ekf_assgn' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_assgn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_assgn/build --no-deps symlink_data

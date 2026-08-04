@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing rover_ekf.egg-info/PKG-INFO
+writing dependency_links to rover_ekf.egg-info/dependency_links.txt
+writing entry points to rover_ekf.egg-info/entry_points.txt
+writing requirements to rover_ekf.egg-info/requires.txt
+writing top-level names to rover_ekf.egg-info/top_level.txt
+reading manifest file 'rover_ekf.egg-info/SOURCES.txt'
+writing manifest file 'rover_ekf.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages/rover-ekf.egg-link (link to .)
+Installing covariance_relay script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/rover_ekf/lib/rover_ekf
+
+Installed /home/sohan/slam_mrt/build/rover_ekf
+running symlink_data
+symbolically linking /home/sohan/slam_mrt/build/rover_ekf/resource/rover_ekf -> /home/sohan/slam_mrt/install/rover_ekf/share/ament_index/resource_index/packages
+symbolically linking /home/sohan/slam_mrt/build/rover_ekf/package.xml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf
+symbolically linking /home/sohan/slam_mrt/build/rover_ekf/launch/ekf_dummy.launch.py -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/launch
+symbolically linking /home/sohan/slam_mrt/build/rover_ekf/config/ekf_rover.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
+symbolically linking /home/sohan/slam_mrt/build/rover_ekf/config/ekf_dummy.yaml -> /home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/config
