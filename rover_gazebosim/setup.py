@@ -41,6 +41,7 @@ setup(
         ('share/rover_gazebosim/config', ['config/joint_names_mobility urdf adaptation.yaml']),
         ('share/rover_gazebosim/config', ['config/slam_mapping.yaml']),
         ('share/rover_gazebosim/config', ['config/nav2_params.yaml']),
+        ('share/rover_gazebosim/config', ['config/rtab_map_config.ini']),
         ('share/rover_gazebosim/urdf', ['urdf/rover.urdf']),
         ('share/rover_gazebosim/world', ['world/new.sdf']),
         ('share/rover_gazebosim/urdf', ['urdf/rover.gazebo']),
