@@ -242,7 +242,7 @@ def generate_launch_description():
 #     value=get_package_share_directory('rover_gazebosim')
 # ),
         SetEnvironmentVariable(
-            name='IGN_GAZEBO_RESOURCE_PATH',
+            name='GZ_SIM_RESOURCE_PATH',
             value=os.path.join(get_package_share_directory('rover_gazebosim'), 'model') + ':' +
                   os.path.join(get_package_share_directory('rover_gazebosim'), 'models'),
         ),

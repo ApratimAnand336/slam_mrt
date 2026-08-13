@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing ekf_assgn.egg-info/PKG-INFO
+writing dependency_links to ekf_assgn.egg-info/dependency_links.txt
+writing entry points to ekf_assgn.egg-info/entry_points.txt
+writing requirements to ekf_assgn.egg-info/requires.txt
+writing top-level names to ekf_assgn.egg-info/top_level.txt
+reading manifest file 'ekf_assgn.egg-info/SOURCES.txt'
+writing manifest file 'ekf_assgn.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages/ekf-assgn.egg-link (link to .)
+Installing covariance_relay script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+Installing dummy_imu_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+Installing dummy_odom_publisher script to /home/sohan/slam_mrt/install/ekf_assgn/lib/ekf_assgn
+
+Installed /home/sohan/slam_mrt/build/ekf_assgn
+running symlink_data

@@ -18,43 +18,43 @@ def generate_launch_description():
 
     return LaunchDescription([
 
-        # 1. map_server — loads saved map, publishes /map
-        Node(
-            package='nav2_map_server',
-            executable='map_server',
-            name='map_server',
-            parameters=[{
-                'use_sim_time': True,
-                'yaml_filename': map_file,
-            }],
-            output='screen',
-        ),
+    #     # 1. map_server — loads saved map, publishes /map
+    #     Node(
+    #         package='nav2_map_server',
+    #         executable='map_server',
+    #         name='map_server',
+    #         parameters=[{
+    #             'use_sim_time': True,
+    #             'yaml_filename': map_file,
+    #         }],
+    #         output='screen',
+    #     ),
 
-        # 2. AMCL — localises robot on the static map
+    #     # 2. AMCL — localises robot on the static map
         
-        Node(
-            package='nav2_amcl',
-            executable='amcl',
-            name='amcl',
-            parameters=[
-        params_file,
-        {'use_sim_time': True},   
-    ],
-            output='screen',
-        ),
+    #     Node(
+    #         package='nav2_amcl',
+    #         executable='amcl',
+    #         name='amcl',
+    #         parameters=[
+    #     params_file,
+    #     {'use_sim_time': True},   
+    # ],
+    #         output='screen',
+    #     ),
 
-        # 3. lifecycle manager for map_server + amcl
-        Node(
-            package='nav2_lifecycle_manager',
-            executable='lifecycle_manager',
-            name='lifecycle_manager_localization',
-            parameters=[{
-                'use_sim_time': True,
-                'autostart': True,
-                'node_names': ['map_server', 'amcl'],
-            }],
-            output='screen',
-        ),
+    #     # 3. lifecycle manager for map_server + amcl
+    #     Node(
+    #         package='nav2_lifecycle_manager',
+    #         executable='lifecycle_manager',
+    #         name='lifecycle_manager_localization',
+    #         parameters=[{
+    #             'use_sim_time': True,
+    #             'autostart': True,
+    #             'node_names': ['map_server', 'amcl'],
+    #         }],
+    #         output='screen',
+    #     ),
 
         # 4. relay nav2 /cmd_vel -> /cmd_vel_raw for the converter
         Node(

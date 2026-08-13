@@ -86,7 +86,7 @@ bt_navigator:
 controller_server:
   ros__parameters:
     use_sim_time: true 
-    controller_frequency: 40.0
+    controller_frequency: 20.0
     costmap_update_timeout: 0.30
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
@@ -101,12 +101,14 @@ controller_server:
 
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.15  # Reduced from default 0.5m
+      movement_time_allowance: 15.0   # Increased from default 10.0s
 
     general_goal_checker:
       stateful: true
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.5
-      yaw_goal_tolerance: 0.5
+      xy_goal_tolerance: 0.15 # Changed from 0.1
+      yaw_goal_tolerance: 0.25 # Increased from 0.1
       path_length_tolerance: 1.0
 
     PathHandler:
@@ -211,19 +213,19 @@ controller_server:
     FollowPath:
       plugin: "nav2_mppi_controller::MPPIController"
 
-      time_steps: 56
+      time_steps: 25 #Reduced from 40 to reduce lookahead timings
       model_dt: 0.05
-      batch_size: 2000
+      batch_size: 1000
 
       # LIMIT DYNAMICS (VERY IMPORTANT)
       vx_max: 0.25
       vx_min: -0.2
-      wz_max: 0.4     #  reduced from 1.9
+      wz_max: 1.2    #  reduced from 1.9
 
       #  REDUCE NOISE (more stable control)
       vx_std: 0.1
       vy_std: 0.0
-      wz_std: 0.2
+      wz_std: 0.6 # increased from 0.4
 
       # acceleration limits (smooth motion)
       ax_max: 2.0
@@ -231,7 +233,7 @@ controller_server:
       az_max: 1.5
 
       iteration_count: 1
-      temperature: 0.3
+      temperature: 0.1 #Reduced from 0.3 to make the controller more deterministic
       gamma: 0.015
 
       visualize: true
@@ -279,7 +281,7 @@ controller_server:
         cost_weight: 5.0   #  encourages rotation alignment
 
       PreferForwardCritic:
-        enabled: false     # disable (important for rover)
+        enabled: true     # disable (important for rover)
 
       CostCritic:
         enabled: true
@@ -300,12 +302,12 @@ controller_server:
         trajectory_point_step: 4
         threshold_to_consider: 0.5
         offset_from_furthest: 20
-        use_path_orientations: false
+        use_path_orientations: false #changed from true because of back and forth jerking motion
 
       PathFollowCritic:
         enabled: true
         cost_power: 1
-        cost_weight: 6.0
+        cost_weight: 15.0 #Changed from 6.0 to encourage path following
 
       PathAngleCritic:
         enabled: true
@@ -320,7 +322,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_radius: 0.22
+      #robot_radius: 0.22
       robot_base_frame: base_link
       rolling_window: true
       width: 10
@@ -376,7 +378,7 @@ global_costmap:
       publish_frequency: 1.0
       global_frame: map
       robot_base_frame: base_link
-      robot_radius: 0.22
+      #robot_radius: 0.22
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -411,7 +413,7 @@ global_costmap:
         map_subscribe_transient_local: true
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
+        cost_scaling_factor: 1.5 #Reduced from 3.0 to make the robot choose the centre of the path
         inflation_radius: 0.7
       always_send_full_costmap: true
       introspection_mode: "disabled"

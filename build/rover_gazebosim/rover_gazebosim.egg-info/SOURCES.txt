@@ -6,6 +6,7 @@ config/nav2_params.yaml
 config/slam_mapping.yaml
 launch/nav2_launch.launch.py
 launch/pipeline_launch.launch.py
+launch/rtabmap_launch.launch.py
 launch/slam_and_rover.launch.py
 launch/spawn_rover.launch.py
 maps/my_map_final.pgm

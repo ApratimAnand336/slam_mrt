@@ -1,0 +1,473 @@
+[0.086s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.086s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71ddc3aecc80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71ddc3aecc20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71ddc3aecc20>>, mixin_verb=('build',))
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.105s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sohan/slam_mrt'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_assgn) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package 'ekf_assgn' with type 'ros.ament_python' and name 'ekf_assgn'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(ekf_dummy_pkg) by extension 'ros'
+[0.120s] DEBUG:colcon.colcon_core.package_identification:Package 'ekf_dummy_pkg' with type 'ros.ament_python' and name 'ekf_dummy_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_components_description) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'husarion_components_description' with type 'ros.ament_cmake' and name 'husarion_components_description'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_controller) by extension 'ros'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Package 'husarion_ugv_controller' with type 'ros.ament_cmake' and name 'husarion_ugv_controller'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(husarion_ugv_description) by extension 'ros'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Package 'husarion_ugv_description' with type 'ros.ament_cmake' and name 'husarion_ugv_description'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(rover_ekf) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'rover_ekf' with type 'ros.ament_python' and name 'rover_ekf'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(rover_gazebosim) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'rover_gazebosim' with type 'ros.ament_python' and name 'rover_gazebosim'
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.151s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/sohan/slam_mrt/install
+[0.152s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 455 installed packages in /opt/ros/jazzy
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_assgn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'ekf_assgn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/ekf_assgn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/ekf_assgn', 'merge_install': False, 'path': '/home/sohan/slam_mrt/ekf_assgn', 'symlink_install': True, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ekf_dummy_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'ekf_dummy_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/ekf_dummy_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/ekf_dummy_pkg', 'merge_install': False, 'path': '/home/sohan/slam_mrt/ekf_dummy_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_components_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'husarion_components_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/husarion_components_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/husarion_components_description', 'merge_install': False, 'path': '/home/sohan/slam_mrt/husarion_components_description', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_ekf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'rover_ekf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/rover_ekf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/rover_ekf', 'merge_install': False, 'path': '/home/sohan/slam_mrt/rover_ekf', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'rover_gazebosim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'rover_gazebosim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/rover_gazebosim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/rover_gazebosim', 'merge_install': False, 'path': '/home/sohan/slam_mrt/rover_gazebosim', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'husarion_ugv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/husarion_ugv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/husarion_ugv_description', 'merge_install': False, 'path': '/home/sohan/slam_mrt/husarion_ugv_description', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'husarion_ugv_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'husarion_ugv_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sohan/slam_mrt/build/husarion_ugv_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sohan/slam_mrt/install/husarion_ugv_controller', 'merge_install': False, 'path': '/home/sohan/slam_mrt/husarion_ugv_controller', 'symlink_install': True, 'test_result_base': None}
+[0.182s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.183s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.183s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sohan/slam_mrt/husarion_components_description' with build type 'ament_cmake'
+[0.183s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sohan/slam_mrt/husarion_components_description'
+[0.185s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.187s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sohan/slam_mrt/ekf_assgn' with build type 'ament_python'
+[0.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_assgn', 'ament_prefix_path')
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/ament_prefix_path.ps1'
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/ament_prefix_path.dsv'
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/ament_prefix_path.sh'
+[0.188s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.188s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.189s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sohan/slam_mrt/ekf_dummy_pkg' with build type 'ament_python'
+[0.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_dummy_pkg', 'ament_prefix_path')
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/ament_prefix_path.ps1'
+[0.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/ament_prefix_path.dsv'
+[0.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/ament_prefix_path.sh'
+[0.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.191s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sohan/slam_mrt/rover_ekf' with build type 'ament_python'
+[0.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_ekf', 'ament_prefix_path')
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/ament_prefix_path.ps1'
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/ament_prefix_path.dsv'
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/ament_prefix_path.sh'
+[0.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.195s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sohan/slam_mrt/rover_gazebosim' with build type 'ament_python'
+[0.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_gazebosim', 'ament_prefix_path')
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/ament_prefix_path.ps1'
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/ament_prefix_path.dsv'
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/ament_prefix_path.sh'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_components_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_components_description -- -j32 -l32
+[0.316s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sohan/slam_mrt/ekf_assgn'
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sohan/slam_mrt/ekf_dummy_pkg'
+[0.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sohan/slam_mrt/rover_ekf'
+[0.535s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.535s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_components_description -- -j32 -l32
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_components_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_components_description
+[0.659s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sohan/slam_mrt/rover_gazebosim'
+[0.659s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.659s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_components_description)
+[0.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_components_description
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description' for CMake module files
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description' for CMake config files
+[0.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_components_description', 'cmake_prefix_path')
+[0.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.ps1'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.dsv'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.sh'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/bin'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/lib/pkgconfig/husarion_components_description.pc'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/lib/python3.12/site-packages'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/bin'
+[0.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.ps1'
+[0.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.dsv'
+[0.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.sh'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.bash'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.zsh'
+[0.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_components_description/share/colcon-core/packages/husarion_components_description)
+[0.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_components_description)
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description' for CMake module files
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description' for CMake config files
+[0.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_components_description', 'cmake_prefix_path')
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.ps1'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.dsv'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/hook/cmake_prefix_path.sh'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/bin'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/lib/pkgconfig/husarion_components_description.pc'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/lib/python3.12/site-packages'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_components_description/bin'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.ps1'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.dsv'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.sh'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.bash'
+[0.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_components_description/share/husarion_components_description/package.zsh'
+[0.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_components_description/share/colcon-core/packages/husarion_components_description)
+[0.676s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sohan/slam_mrt/husarion_ugv_description' with build type 'ament_cmake'
+[0.676s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sohan/slam_mrt/husarion_ugv_description'
+[0.676s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.676s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_ugv_description': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/home/sohan/slam_mrt/install/husarion_ugv_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_ugv_description -- -j32 -l32
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_ugv_description' returned '0': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/home/sohan/slam_mrt/install/husarion_ugv_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_ugv_description -- -j32 -l32
+[0.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_ugv_description': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/home/sohan/slam_mrt/install/husarion_ugv_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_ugv_description
+[0.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_ugv_description)
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description' for CMake module files
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_ugv_description' returned '0': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/home/sohan/slam_mrt/install/husarion_ugv_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_ugv_description
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description' for CMake config files
+[0.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_ugv_description', 'cmake_prefix_path')
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.ps1'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.sh'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/bin'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/lib/pkgconfig/husarion_ugv_description.pc'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/lib/python3.12/site-packages'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/bin'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.ps1'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.dsv'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.sh'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.bash'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.zsh'
+[0.733s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_ugv_description/share/colcon-core/packages/husarion_ugv_description)
+[0.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_ugv_description)
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description' for CMake module files
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description' for CMake config files
+[0.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_ugv_description', 'cmake_prefix_path')
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.ps1'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.dsv'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/hook/cmake_prefix_path.sh'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/bin'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/lib/pkgconfig/husarion_ugv_description.pc'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/lib/python3.12/site-packages'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_description/bin'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.ps1'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.dsv'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.sh'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.bash'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_description/share/husarion_ugv_description/package.zsh'
+[0.736s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_ugv_description/share/colcon-core/packages/husarion_ugv_description)
+[0.736s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sohan/slam_mrt/husarion_ugv_controller' with build type 'ament_cmake'
+[0.736s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sohan/slam_mrt/husarion_ugv_controller'
+[0.736s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.736s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_ugv_controller': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_ugv_description:/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_ugv_controller -- -j32 -l32
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_ugv_controller' returned '0': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_ugv_description:/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sohan/slam_mrt/build/husarion_ugv_controller -- -j32 -l32
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/husarion_ugv_controller': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_ugv_description:/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_ugv_controller
+[0.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_ugv_controller)
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller' for CMake module files
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/husarion_ugv_controller' returned '0': CMAKE_PREFIX_PATH=/home/sohan/slam_mrt/install/husarion_ugv_description:/home/sohan/slam_mrt/install/husarion_components_description:/home/sohan/slam_mrt/install/husarion_ugv_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/sohan/slam_mrt/install/rover_gazebosim:/home/sohan/slam_mrt/install/rover_ekf:/home/sohan/slam_mrt/install/ekf_dummy_pkg:/home/sohan/slam_mrt/install/ekf_assgn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sohan/slam_mrt/build/husarion_ugv_controller
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller' for CMake config files
+[0.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_ugv_controller', 'cmake_prefix_path')
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.ps1'
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.sh'
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/bin'
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/lib/pkgconfig/husarion_ugv_controller.pc'
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/lib/python3.12/site-packages'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/bin'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.ps1'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.dsv'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.sh'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.bash'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.zsh'
+[0.781s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_ugv_controller/share/colcon-core/packages/husarion_ugv_controller)
+[0.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husarion_ugv_controller)
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller' for CMake module files
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller' for CMake config files
+[0.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('husarion_ugv_controller', 'cmake_prefix_path')
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/hook/cmake_prefix_path.sh'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/bin'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/lib/pkgconfig/husarion_ugv_controller.pc'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/lib/python3.12/site-packages'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/husarion_ugv_controller/bin'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.ps1'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.dsv'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.sh'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.bash'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/husarion_ugv_controller/share/husarion_ugv_controller/package.zsh'
+[0.784s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/husarion_ugv_controller/share/colcon-core/packages/husarion_ugv_controller)
+[0.968s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: alias, bdist, init_catalog, register, upload_docs, saveopts, extract_messages, install_lib, clean, bdist_egg, easy_install, dist_info, install_data, upload, install, bdist_rpm, develop, bdist_wheel, install_egg_info, sdist, install_scripts, install_headers, build_scripts, egg_info, build_clib, rotate, test, build_ext, compile_catalog, build_py, setopt, bdist_dumb, editable_wheel, check, build, symlink_data, update_catalog
+[0.969s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: alias, bdist, init_catalog, register, upload_docs, saveopts, extract_messages, install_lib, clean, bdist_egg, easy_install, dist_info, install_data, upload, install, bdist_rpm, develop, bdist_wheel, install_egg_info, sdist, install_scripts, install_headers, build_scripts, egg_info, build_clib, rotate, test, build_ext, compile_catalog, build_py, setopt, bdist_dumb, editable_wheel, check, build, symlink_data, update_catalog
+[0.969s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: alias, bdist, init_catalog, register, upload_docs, saveopts, extract_messages, install_lib, clean, bdist_egg, easy_install, dist_info, install_data, upload, install, bdist_rpm, develop, bdist_wheel, install_egg_info, sdist, install_scripts, install_headers, build_scripts, egg_info, build_clib, rotate, test, build_ext, compile_catalog, build_py, setopt, bdist_dumb, editable_wheel, check, build, symlink_data, update_catalog
+[0.990s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: alias, bdist, init_catalog, register, upload_docs, saveopts, extract_messages, install_lib, clean, bdist_egg, easy_install, dist_info, install_data, upload, install, bdist_rpm, develop, bdist_wheel, install_egg_info, sdist, install_scripts, install_headers, build_scripts, egg_info, build_clib, rotate, test, build_ext, compile_catalog, build_py, setopt, bdist_dumb, editable_wheel, check, build, symlink_data, update_catalog
+[1.146s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --editable, --install-layout, --dry-run, --install-dir, --no-deps, --zip-ok, --optimize, --multi-version, --local-snapshots-ok, --no-user-cfg, --index-url, --force-installation-into-system-dir, --always-unzip, --allow-hosts, --egg-path, --site-dirs, --verbose, --version, --no-find-links, --exclude-scripts, --prefix, --upgrade, --record, --user, --always-copy, --quiet, --help, --script-dir, --uninstall, --find-links, --build-directory
+[1.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/ekf_assgn': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_assgn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_assgn/build --no-deps symlink_data
+[1.148s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --editable, --install-layout, --dry-run, --install-dir, --no-deps, --zip-ok, --optimize, --multi-version, --local-snapshots-ok, --no-user-cfg, --index-url, --force-installation-into-system-dir, --always-unzip, --allow-hosts, --egg-path, --site-dirs, --verbose, --version, --no-find-links, --exclude-scripts, --prefix, --upgrade, --record, --user, --always-copy, --quiet, --help, --script-dir, --uninstall, --find-links, --build-directory
+[1.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/ekf_dummy_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_dummy_pkg/build --no-deps symlink_data
+[1.149s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --editable, --install-layout, --dry-run, --install-dir, --no-deps, --zip-ok, --optimize, --multi-version, --local-snapshots-ok, --no-user-cfg, --index-url, --force-installation-into-system-dir, --always-unzip, --allow-hosts, --egg-path, --site-dirs, --verbose, --version, --no-find-links, --exclude-scripts, --prefix, --upgrade, --record, --user, --always-copy, --quiet, --help, --script-dir, --uninstall, --find-links, --build-directory
+[1.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/rover_ekf': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_ekf/build --no-deps symlink_data
+[1.161s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --editable, --install-layout, --dry-run, --install-dir, --no-deps, --zip-ok, --optimize, --multi-version, --local-snapshots-ok, --no-user-cfg, --index-url, --force-installation-into-system-dir, --always-unzip, --allow-hosts, --egg-path, --site-dirs, --verbose, --version, --no-find-links, --exclude-scripts, --prefix, --upgrade, --record, --user, --always-copy, --quiet, --help, --script-dir, --uninstall, --find-links, --build-directory
+[1.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sohan/slam_mrt/build/rover_gazebosim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_gazebosim/build --no-deps symlink_data
+[1.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_assgn', 'pythonpath_develop')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/ekf_assgn/share/ekf_assgn/hook/pythonpath_develop.ps1'
+[1.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/ekf_assgn' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_assgn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_assgn/build --no-deps symlink_data
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/build/ekf_assgn/share/ekf_assgn/hook/pythonpath_develop.dsv'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/ekf_assgn/share/ekf_assgn/hook/pythonpath_develop.sh'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn' for CMake module files
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn' for CMake config files
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn/lib'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn/bin'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn/lib/pkgconfig/ekf_assgn.pc'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn/lib/python3.12/site-packages'
+[1.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_assgn', 'pythonpath')
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/pythonpath.ps1'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/pythonpath.dsv'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/hook/pythonpath.sh'
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_assgn/bin'
+[1.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ekf_assgn)
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/package.ps1'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/package.dsv'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/package.sh'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/package.bash'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_assgn/share/ekf_assgn/package.zsh'
+[1.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/ekf_assgn/share/colcon-core/packages/ekf_assgn)
+[1.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_ekf', 'pythonpath_develop')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/rover_ekf/share/rover_ekf/hook/pythonpath_develop.ps1'
+[1.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/rover_ekf' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_ekf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_ekf/build --no-deps symlink_data
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/build/rover_ekf/share/rover_ekf/hook/pythonpath_develop.dsv'
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/rover_ekf/share/rover_ekf/hook/pythonpath_develop.sh'
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf' for CMake module files
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf' for CMake config files
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf/lib'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf/bin'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf/lib/pkgconfig/rover_ekf.pc'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf/lib/python3.12/site-packages'
+[1.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_ekf', 'pythonpath')
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/pythonpath.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/pythonpath.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/hook/pythonpath.sh'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_ekf/bin'
+[1.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_ekf)
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/package.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/package.dsv'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/package.sh'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/package.bash'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_ekf/share/rover_ekf/package.zsh'
+[1.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/rover_ekf/share/colcon-core/packages/rover_ekf)
+[1.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_dummy_pkg', 'pythonpath_develop')
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.ps1'
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/ekf_dummy_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/ekf_dummy_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/ekf_dummy_pkg/build --no-deps symlink_data
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath_develop.sh'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg' for CMake module files
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg' for CMake config files
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg/bin'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/pkgconfig/ekf_dummy_pkg.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg/lib/python3.12/site-packages'
+[1.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('ekf_dummy_pkg', 'pythonpath')
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath.dsv'
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/hook/pythonpath.sh'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/ekf_dummy_pkg/bin'
+[1.466s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ekf_dummy_pkg)
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/package.ps1'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/package.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/package.sh'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/package.bash'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/ekf_dummy_pkg/package.zsh'
+[1.466s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/ekf_dummy_pkg/share/colcon-core/packages/ekf_dummy_pkg)
+[1.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_gazebosim', 'pythonpath_develop')
+[1.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/rover_gazebosim/share/rover_gazebosim/hook/pythonpath_develop.ps1'
+[1.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sohan/slam_mrt/build/rover_gazebosim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sohan/slam_mrt/build/rover_gazebosim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sohan/slam_mrt/build/rover_gazebosim/build --no-deps symlink_data
+[1.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/build/rover_gazebosim/share/rover_gazebosim/hook/pythonpath_develop.dsv'
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/build/rover_gazebosim/share/rover_gazebosim/hook/pythonpath_develop.sh'
+[1.487s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim' for CMake module files
+[1.487s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim' for CMake config files
+[1.489s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim/lib'
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim/bin'
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim/lib/pkgconfig/rover_gazebosim.pc'
+[1.490s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim/lib/python3.12/site-packages'
+[1.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_gazebosim', 'pythonpath')
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/pythonpath.ps1'
+[1.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/pythonpath.dsv'
+[1.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/hook/pythonpath.sh'
+[1.491s] Level 1:colcon.colcon_core.environment:checking '/home/sohan/slam_mrt/install/rover_gazebosim/bin'
+[1.491s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_gazebosim)
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/package.ps1'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/package.dsv'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/package.sh'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/package.bash'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/sohan/slam_mrt/install/rover_gazebosim/share/rover_gazebosim/package.zsh'
+[1.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sohan/slam_mrt/install/rover_gazebosim/share/colcon-core/packages/rover_gazebosim)
+[1.493s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.493s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.493s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.493s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.496s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.496s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.496s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.508s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.508s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohan/slam_mrt/install/local_setup.ps1'
+[1.508s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sohan/slam_mrt/install/_local_setup_util_ps1.py'
+[1.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohan/slam_mrt/install/setup.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohan/slam_mrt/install/local_setup.sh'
+[1.510s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sohan/slam_mrt/install/_local_setup_util_sh.py'
+[1.511s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohan/slam_mrt/install/setup.sh'
+[1.512s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohan/slam_mrt/install/local_setup.bash'
+[1.512s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohan/slam_mrt/install/setup.bash'
+[1.513s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sohan/slam_mrt/install/local_setup.zsh'
+[1.513s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sohan/slam_mrt/install/setup.zsh'

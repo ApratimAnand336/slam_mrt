@@ -17,6 +17,8 @@ slam_toolbox:
     scan_topic: /second_lidar/scan
     use_map_saver: true
     mode: mapping #localization
+    max_num_threads: 4
+    solver_threads: 4
 
     # Message filter queue size to prevent dropping messages
     queue_size: 100
